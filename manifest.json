@@ -1,0 +1,35 @@
+{
+    "name": "From URL to QR",
+    "version": "1.1",
+    "description": "Convert URLs (and more) in QR codes.",
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "background": {
+        "scripts": ["eventPage.js"],
+        "persistent": false
+    },
+    "browser_action": {
+        "default_title": "From URL to QR",
+        "default_icon": "icon128.png",
+        "default_popup": "popup.html"
+    },
+    "options_ui":{
+        "page":"options.html",
+        "chrome_style": false
+    },
+    "content_scripts": [{
+        "js": ["script.js", "options.js", "customText.js", "jquery-qrcode-0.14.0.min.js", "materialize.min.js"],
+        "matches": ["http://*/*", "https://*/*"]
+        }],
+    "permissions": [
+        "http://www.google.com/",
+        "tabs",
+        "storage",
+        "contextMenus"
+    ],
+    "manifest_version": 2,
+    "content_security_policy":"script-src 'self' https://code.jquery.com/jquery-3.0.0.min.js; object-src 'self'"
+}
