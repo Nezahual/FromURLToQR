@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="__MSG_@@bidi_dir__" lang="__MSG_@@IETF_lang_tag__">
     <head>
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" />
         <style>
@@ -33,10 +33,10 @@
             <div class="row">
                 <div class="input-field col s6">
                     <select id="sizeInput">
-                        <option value="150">Small</option>
-                        <option value="250">Medium</option>
-                        <option value="400">Large</option>
-                        <option value="550">X-Large</option>
+                        <option value="150" data-i18n="small"></option>
+                        <option value="250" data-i18n="medium"></option>
+                        <option value="400" data-i18n="large"></option>
+                        <option value="550" data-i18n="xlarge"></option>
                     </select>
                     <label style="left: 0;">QR size</label>
                 </div>
@@ -50,6 +50,7 @@
             </div>
         </div>
     </body>
+    <script type="application/ecmascript" src="chrome-i18n.js"></script>
 </html>
 <script src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
 <script src="jquery-qrcode-0.14.0.min.js"></script>

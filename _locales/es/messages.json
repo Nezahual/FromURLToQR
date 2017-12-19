@@ -1,0 +1,26 @@
+{
+    "appDesc":{
+        "message": "Convierte URLs (y más) en códigos QR.",
+        "description": "App Description"
+    },
+
+    "small": {
+        "message": "Pequeño",
+        "description": "Small in sizes options"
+    },
+
+    "medium": {
+        "message": "Mediano",
+        "description": "Medium in sizes options"
+    },
+
+    "large": {
+        "message": "Grande",
+        "description": "Large in sizes options"
+    },
+
+    "xlarge": {
+        "message": "Extra grande",
+        "description": "X-Large in sizes options"
+    }
+}

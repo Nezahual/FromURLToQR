@@ -10,9 +10,6 @@ chrome.contextMenus.onClicked.addListener(onClickHandler);
 
 chrome.runtime.onInstalled.addListener(function(details){
     
-    
-    
-    
     if(details.reason == "install"){
         //Creating contextual menus
         chrome.contextMenus.removeAll();
