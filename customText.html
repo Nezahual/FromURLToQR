@@ -47,13 +47,13 @@
         <div id="main" class="container">
             <div class="row">
                 <div class="col s12 center-align">
-                    <h3>Custom text to QR</h3>
+                    <h3 data-i18n="customText"></h3>
                 </div>
             </div>
             <div class="row" id="inputsDiv">
                 <div class="col s5 input-field">
                     <textarea id="textareaToQR" class="materialize-textarea validate" data-length="500"></textarea>
-                    <label for="textarea1">Place your custom text here (500 characters max):</label>
+                    <label for="textarea1" data-i18n="placeCustomHere"></label>
                 </div>
                 <div class="col s6 offset-s1" style="background-color: #e5e5e5; position: relative;">
                     <canvas id="qrContent"></canvas>
@@ -61,22 +61,23 @@
             </div>
             <div class="row">
                 <div class="col s5">
-                    <a class="waves-effect waves-light btn" id="generateQR">Generate QR</a>
+                    <a class="waves-effect waves-light btn" id="generateQR" data-i18n="generateQR"></a>
                 </div>
-                <div class="col s6 offset-s1">
+                <div class="col s6 offset-s1" data-i18n="saveToDisk">
 <!--                    <a class="waves-effect waves-light btn" id="saveQR">Save QR</a>-->
-                    If you want to save the QR to your disk, just right click over it and select "Save image as".
+                   
                 </div>
                 
             </div>
-            <div class="row" id="errorMaxChars">
-                The text exceeds the maximum allowed characters.
+            <div class="row" id="errorMaxChars" data-i18n="maximumChars">
+                
             </div>
-            <div class="row">
-                *Note that the QR generated will only be affected by the color selected in the options page but not by the size.
+            <div class="row" data-i18n="QRaffectedJustByColor">
+                
             </div>
         </div>
     </body>
+    <script type="application/ecmascript" src="chrome-i18n.js"></script>
 </html>
 <script src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
 <script src="jquery-qrcode-0.14.0.min.js"></script>

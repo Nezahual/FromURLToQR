@@ -4,6 +4,51 @@
         "description": "App Description"
     },
 
+    "customText":{
+        "message": "De texto personalizado a QR",
+        "description": "custom"
+    },
+
+    "placeCustomHere":{
+        "message": "Coloca tu texto personalizado aquí (máximo 500 caracteres):",
+        "description": "Placing custom text placeholder in customText.html"
+    },
+
+    "generateQR":{
+        "message": "Generar QR",
+        "description": "Generate QR button in customText.html"
+    },
+    
+    "saveToDisk":{
+        "message": "Si quieres guardar el QR en tu disco duro, haz click derecho sobre él y selecciona \"Guardar imagen como...\".",
+        "description": "Saving QR to disk in customText.html"
+    },
+    
+    "maximumChars":{
+        "message": "El texto excede el máximo de caracteres permitidos.",
+        "description": "Warning max characters allowed reached in customText.html"
+    },
+    
+    "QRaffectedJustByColor":{
+        "message": "*Note that the QR generated will only be affected by the color selected in the options page but not by the size.",
+        "description": "Warning QR will only be affected by color in customText.html"
+    },
+
+    "QRSize":{
+        "message": "Tamaño del QR",
+        "description": "Choosing a size for the QR code in options"
+    },
+
+    "chooseColor":{
+        "message": "Elige un color",
+        "description": "Choosing a color from palette in options"
+    },
+
+    "saveConfig":{
+        "message": "Salvar cambios",
+        "description": "Saving changes in options"
+    },
+
     "small": {
         "message": "Pequeño",
         "description": "Small in sizes options"
