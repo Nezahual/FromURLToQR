@@ -4,9 +4,14 @@
         "description": "App Description"
     },
 
+    "scanQR":{
+        "message": "Escanea el siguiente código QR:",
+        "description": "ScanQR in popup.html"
+    },
+
     "customText":{
         "message": "De texto personalizado a QR",
-        "description": "custom"
+        "description": "Title from custon to QR in custom.text"
     },
 
     "placeCustomHere":{
