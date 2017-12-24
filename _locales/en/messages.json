@@ -21,7 +21,7 @@
     
     "generateQR":{
         "message": "Generate QR",
-        "description": "Generate QR button in customText.html"
+        "description": "Generate_QR button in customText.html"
     },
 
     "saveToDisk":{
