@@ -1,0 +1,76 @@
+{
+    "appDesc":{
+        "message": "Convierte URLs (y más) en códigos QR.",
+        "description": "App Description"
+    },
+
+    "scanQR":{
+        "message": "Escanea el siguiente código QR:",
+        "description": "ScanQR in popup.html"
+    },
+
+    "customText":{
+        "message": "De texto personalizado a QR",
+        "description": "Title from custon to QR in custom.text"
+    },
+
+    "placeCustomHere":{
+        "message": "Coloca tu texto personalizado aquí (máximo 500 caracteres):",
+        "description": "Placing custom text placeholder in customText.html"
+    },
+
+    "generateQR":{
+        "message": "Generar QR",
+        "description": "Generate_QR button in customText.html"
+    },
+    
+    "saveToDisk":{
+        "message": "Si quieres guardar el QR en tu disco duro, haz click derecho sobre él y selecciona \"Guardar imagen como...\".",
+        "description": "Saving QR to disk in customText.html"
+    },
+    
+    "maximumChars":{
+        "message": "El texto excede el máximo de caracteres permitidos.",
+        "description": "Warning max characters allowed reached in customText.html"
+    },
+    
+    "QRaffectedJustByColor":{
+        "message": "*Note that the QR generated will only be affected by the color selected in the options page but not by the size.",
+        "description": "Warning QR will only be affected by color in customText.html"
+    },
+
+    "QRSize":{
+        "message": "Tamaño del QR",
+        "description": "Choosing a size for the QR code in options"
+    },
+
+    "chooseColor":{
+        "message": "Elige un color",
+        "description": "Choosing a color from palette in options"
+    },
+
+    "saveConfig":{
+        "message": "Salvar cambios",
+        "description": "Saving changes in options"
+    },
+
+    "small": {
+        "message": "Pequeño",
+        "description": "Small in sizes options"
+    },
+
+    "medium": {
+        "message": "Mediano",
+        "description": "Medium in sizes options"
+    },
+
+    "large": {
+        "message": "Grande",
+        "description": "Large in sizes options"
+    },
+
+    "xlarge": {
+        "message": "Extra grande",
+        "description": "X-Large in sizes options"
+    }
+}
