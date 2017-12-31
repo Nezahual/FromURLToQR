@@ -2,7 +2,7 @@
 
     var config = new Object();
     
-    chrome.storage.sync.get(function(value){
+    chrome.storage.sync.get(["QRsize", "QRcolor"], function(value){
         
         config.QRsize = value.QRsize;
         config.QRcolor = value.QRcolor;
@@ -12,7 +12,7 @@
             currentWindow: true,
             active: true
         };
-    
+        
     chrome.tabs.query(query, function(tab){
         
         $('#qrContent').qrcode({

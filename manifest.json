@@ -29,7 +29,8 @@
         "http://www.google.com/",
         "tabs",
         "storage",
-        "contextMenus"
+        "contextMenus",
+        "activeTab"
     ],
     "manifest_version": 2,
     "content_security_policy":"script-src 'self' https://code.jquery.com/jquery-3.0.0.min.js; object-src 'self'"

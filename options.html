@@ -14,6 +14,7 @@
             #saveBtnDiv {
             
                 padding-top: 5%;
+                left: -3%;
             }
             
             #saveBtnDiv a {
@@ -24,6 +25,15 @@
             
             ul.dropdown-content.select-dropdown li span {
                 color: #42a5f5; 
+            }
+
+            #toast-container > *{
+                width: 50%;
+            }
+
+            #toast-container {
+                left: 48%;
+                bottom: 7%;
             }
         </style>
     </head>
@@ -45,14 +55,16 @@
                     <input type="color" value="#000000" id="colorInput">
                 </div>
             </div>
-            <div class="input-field col s12" id="saveBtnDiv">
-                <a class="waves-effect waves-light btn" id="saveBtn"data-i18n="saveConfig"></a>
+            <div class="row" id="rowSaveBtn">
+                <div class="input-field col s6" id="saveBtnDiv">
+                    <a class="waves-effect waves-light btn" id="saveBtn"data-i18n="saveConfig"></a>
+                </div>
             </div>
         </div>
     </body>
-    <script type="application/ecmascript" src="chrome-i18n.js"></script>
 </html>
 <script src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
 <script src="jquery-qrcode-0.14.0.min.js"></script>
 <script src="materialize.min.js"></script>
 <script src="options.js"></script>
+<script type="application/ecmascript" src="chrome-i18n.js"></script>
