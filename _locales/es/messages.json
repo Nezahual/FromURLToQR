@@ -4,14 +4,19 @@
         "description": "App Description"
     },
 
-    "scanQR":{
-        "message": "Escanea el siguiente código QR:",
-        "description": "ScanQR in popup.html"
+    "QRfyThis":{
+        "message": "QRfy this! (1000 caracteres máximo)",
+        "description": "Functionality title in (selected) contextual menu."
     },
 
     "customText":{
         "message": "De texto personalizado a QR",
-        "description": "Title from custon to QR in custom.text"
+        "description": "Title from custon to QR in custom.text and in title (browser_action) contextual menu"
+    },
+
+    "scanQR":{
+        "message": "Escanea el siguiente código QR:",
+        "description": "ScanQR in popup.html"
     },
 
     "placeCustomHere":{
@@ -29,13 +34,13 @@
         "description": "Saving QR to disk in customText.html"
     },
     
-    "maximumChars":{
-        "message": "El texto excede el máximo de caracteres permitidos.",
+    "maximumChars500":{
+        "message": "El texto excede el máximo de caracteres permitidos (500).",
         "description": "Warning max characters allowed reached in customText.html"
     },
     
     "QRaffectedJustByColor":{
-        "message": "*Note that the QR generated will only be affected by the color selected in the options page but not by the size.",
+        "message": "*Ten en cuenta que el QR generado solo se verá afectado por el color seleccionado en la configuración, pero no por el tamaño.",
         "description": "Warning QR will only be affected by color in customText.html"
     },
 
@@ -50,8 +55,13 @@
     },
 
     "saveConfig":{
-        "message": "Salvar cambios",
+        "message": "Guardar cambios",
         "description": "Saving changes in options"
+    },
+    
+    "successfullySaved":{
+        "message": "Cambios guardados.",
+        "description": "Confirmation message of changes saved successfully in options"
     },
 
     "small": {
@@ -72,5 +82,10 @@
     "xlarge": {
         "message": "Extra grande",
         "description": "X-Large in sizes options"
+    },
+
+    "maximumChars1000":{
+        "message": "El texto excede el máximo de caracteres permitidos (1000).",
+        "description": "Warning max characters allowed reached in qrThis.html"
     }
 }

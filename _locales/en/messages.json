@@ -4,14 +4,19 @@
         "description": "App Description"
     },
 
-    "scanQR":{
-        "message": "Scan the following QR code:",
-        "description": "ScanQR in popup.html"
+    "QRfyThis":{
+        "message": "QRfy this! (1000 chars max)",
+        "description": "Functionality title in (selected) contextual menu."
     },
 
     "customText":{
         "message": "Custom text to QR",
-        "description": "Title from custon to QR in custom.text"
+        "description": "Title from custon to QR in custom.text and in title (browser_action) contextual menu"
+    },
+
+    "scanQR":{
+        "message": "Scan the following QR code:",
+        "description": "ScanQR in popup.html"
     },
 
     "placeCustomHere":{
@@ -26,17 +31,17 @@
 
     "saveToDisk":{
         "message": "If you want to save the QR code to your disk, just right click over it and select \"Save image as\".",
-        "description": "Saving QR to disk in customText.html"
+        "description": "Saving QR to disk in customText.html and qrThis.html"
     },
     
-    "maximumChars":{
-        "message": "The text exceeds the maximum allowed characters.",
-        "description": "Warning max characters allowed reached in customText.html"
+    "maximumChars500":{
+        "message": "The text exceeds the maximum allowed characters (500).",
+        "description": "Warning max characters allowed reached in customText.html and in qrThis.html"
     },
     
     "QRaffectedJustByColor":{
-        "message": "*Ten en cuenta que el QR generado solo se verá afectado por el color seleccionado en la configuración, pero no por el tamaño.",
-        "description": "Warning QR will only be affected by color in customText.html"
+        "message": "*Note that the QR generated will only be affected by the color selected in the options page but not by the size.",
+        "description": "Warning QR will only be affected by color in customText.html and qrThis.html"
     },
     
     "QRSize":{
@@ -52,6 +57,11 @@
     "saveConfig":{
         "message": "Save changes",
         "description": "Saving changes in options"
+    },
+    
+    "successfullySaved":{
+        "message": "Changes saved.",
+        "description": "Confirmation message of changes saved successfully in options"
     },
     
     "small": {
@@ -72,5 +82,10 @@
     "xlarge": {
         "message": "X-Large",
         "description": "X-Large in sizes options"
+    },
+
+    "maximumChars1000":{
+        "message": "The text exceeds the maximum allowed characters (1000).",
+        "description": "Warning max characters allowed reached in qrThis.html"
     }
 }

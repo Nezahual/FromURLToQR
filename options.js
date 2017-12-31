@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     $('select').material_select();
     
     fillInputs();
@@ -10,6 +11,9 @@ $(document).ready(function() {
         
         chrome.storage.sync.set({"QRsize": size});
         chrome.storage.sync.set({"QRcolor": color});
+
+        var toastSaved = $('<span>'+chrome.i18n.getMessage("successfullySaved")+'</span>');
+        Materialize.toast(toastSaved, 4000);
     });
     
     //////////////////////////////////// testing buttons ////////////////////////////////////
@@ -41,11 +45,10 @@ $(document).ready(function() {
     //////////////////////////////////// end testing buttons ////////////////////////////////////
 });
 
-
-//rellena los inputs de la configuración con los valores almacenados en el storage.
+//Fills the config inputs using stored values.
 function fillInputs(){
 
-    chrome.storage.sync.get(function(value){
+    chrome.storage.sync.get(["QRsize", "QRcolor"], function(value){
         
         $('#sizeInput option[value='+(value.QRsize)+']').prop('selected', true);
         $('#colorInput').val(value.QRcolor);

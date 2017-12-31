@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <style>
+        
+            #qrContent {
+                margin:auto;
+                width: 50%;
+            }
+
+            .centered {
+                text-align: center;
+            }
+
+            canvas {
+                padding: 0;
+                margin: auto;
+                display: block;
+                width: 80%;
+            }
+
+            #errorMaxChars {
+        
+                color: red;
+                font-weight: bold;
+                display: none;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1 data-i18n="scanQR" class="centered"></h1>
+        <div id="qrContent">
+            <h1 id="errorMaxChars" class="centered" data-i18n="maximumChars1000"></h1>
+        </div>
+        <p class="centered notes" data-i18n="saveToDisk"></p>
+        <p class="centered notes" data-i18n="QRaffectedJustByColor"></p>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
+    <script src="jquery-qrcode-0.14.0.min.js"></script>
+    <script src="qrThis.js"></script>
+    <script type="application/ecmascript" src="chrome-i18n.js"></script>
+</html>
