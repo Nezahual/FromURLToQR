@@ -4,29 +4,39 @@
     "description": "__MSG_appDesc__",
     "default_locale": "en",
     "icons": {
-        "16": "icon16.png",
-        "48": "icon48.png",
-        "128": "icon128.png"
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
     },
     "background": {
-        "scripts": ["eventPage.js"],
+        "scripts": ["scripts/eventPage.js"],
         "persistent": false
     },
     "browser_action": {
         "default_title": "From URL to QR",
-        "default_icon": "icon128.png",
+        "default_icon": "images/icon128.png",
         "default_popup": "popup.html"
     },
     "options_ui":{
         "page":"options.html",
         "chrome_style": false
     },
-    "content_scripts": [{
-        "js": ["script.js", "options.js", "customText.js", "jquery-qrcode-0.14.0.min.js", "materialize.min.js"],
-        "matches": ["http://*/*", "https://*/*"]
-        }],
+    "content_scripts": [
+        {
+            "js": [
+                "scripts/mainFunctionality.js",
+                "scripts/options.js",
+                "scripts/customText.js",
+                "vendors/jquery-qrcode-0.14.0.min.js",
+                "vendors/materialize.min.js"
+            ],
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ]
+        }
+    ],
     "permissions": [
-        "http://www.google.com/",
         "tabs",
         "storage",
         "contextMenus",
