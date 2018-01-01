@@ -10,6 +10,7 @@ chrome.runtime.onInstalled.addListener(function(details){
 
         chrome.storage.sync.set({"QRsize": config.QRsize});
         chrome.storage.sync.set({"QRcolor": config.QRcolor});
+        chrome.storage.sync.set({"QRThisActive": true});
     }
 });
 
@@ -27,7 +28,8 @@ chrome.contextMenus.create({
 chrome.contextMenus.create({
     title: chrome.i18n.getMessage("QRfyThis"),
     contexts: ["selection"],
-    id: "qrthis"
+    id: "qrthis",
+    visible: true
 });
 
 function onClickHandler(info, tab){

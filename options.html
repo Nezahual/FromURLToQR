@@ -35,12 +35,24 @@
                 left: 48%;
                 bottom: 7%;
             }
+
+            #checkboxQRthisCol {
+                
+                margin-top: 0px;
+                padding-left: 0px;
+
+            }
+
+            #firstRow {
+                
+                margin-bottom: 0px;
+            }
         </style>
     </head>
  
     <body>
         <div id="options">
-            <div class="row">
+            <div class="row" id="firstRow">
                 <div class="input-field col s6">
                     <select id="sizeInput">
                         <option value="150" data-i18n="small"></option>
@@ -55,9 +67,15 @@
                     <input type="color" value="#000000" id="colorInput">
                 </div>
             </div>
+            <div class="row">
+                <div class="input-field col s12" id="checkboxQRthisCol">
+                    <input type="checkbox" class="filled-in" id="checkboxQRThis"/>
+                    <label for="checkboxQRThis" data-i18n="checkboxQRThisLabel"></label>
+                </div>
+            </div>
             <div class="row" id="rowSaveBtn">
                 <div class="input-field col s6" id="saveBtnDiv">
-                    <a class="waves-effect waves-light btn" id="saveBtn"data-i18n="saveConfig"></a>
+                    <a class="waves-effect waves-light btn" id="saveBtn" data-i18n="saveConfig"></a>
                 </div>
             </div>
         </div>
