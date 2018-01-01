@@ -54,6 +54,11 @@
         "description": "Choosing a color from palette in options"
     },
 
+    "checkboxQRThisLabel":{
+        "message": "Agrega funcionalidad QRThis al menu contextual.",
+        "description": "Label for checkbox to select if QRThis feature is shown or not in options"
+    },
+
     "saveConfig":{
         "message": "Guardar cambios",
         "description": "Saving changes in options"
