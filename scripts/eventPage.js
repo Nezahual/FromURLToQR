@@ -60,6 +60,6 @@ function getSelectedText(){
     });
 }
     
-//adds the events onClick handler to the listener
+//adds the event onClick handler to the listener
 chrome.contextMenus.onClicked.addListener(onClickHandler);
     
